@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+
+  --color-spa-bg: #fcfbf9;
+  --color-spa-text: #2c3e35;
+  --color-spa-accent: #c5a880;
+  --color-spa-accent-hover: #b3956d;
+  --color-spa-dark: #1a241f;
+  --color-spa-light: #f4f1eb;
+}
+
+body {
+  background-color: var(--color-spa-bg);
+  color: var(--color-spa-text);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-spa-bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-spa-accent);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-spa-accent-hover);
+}
